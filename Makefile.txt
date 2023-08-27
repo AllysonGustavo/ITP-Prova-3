@@ -1,0 +1,6 @@
+all: main.c funcoes.c
+	gcc main.c funcoes.c -o main -g -pedantic
+funcs: funcoes.c
+	gcc *.c funcoes -o main -g -W 
+clean:
+	rm -rf *.o
